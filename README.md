@@ -1,4 +1,4 @@
-# sf_practice
+# sf-task1006-pr-vagrant-postgresql-app-django
 For Skill Factory study project (B10, PR)
 
 <br>
