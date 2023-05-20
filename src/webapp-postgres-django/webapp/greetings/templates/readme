@@ -1,0 +1,4 @@
+## DO_NOT_PLACE templates inside this folder
+## instead use 
+## webapp-postgres-django/webapp/templates
+##

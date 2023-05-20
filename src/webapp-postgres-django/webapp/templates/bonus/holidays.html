@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonus | Turkish holidays</title>
+    <link rel="stylesheet" href="{% static 'bonus/css/style.css' %}">
+</head>
+<body>
+    <div class="bonus_version">{{ version }}</div>
+	<section>
+        <div id="fader" class="container">
+            <a href = "/">
+            <div class="images">
+                <img src="{% static 'bonus/img/turkey_holiday__step01.jpg' %}">
+                <img src="{% static 'bonus/img/turkey_holiday__step02.jpg' %}">
+                <img src="{% static 'bonus/img/turkey_holiday__step03.jpg' %}">
+                <img src="{% static 'bonus/img/turkey_holiday__step04.jpg' %}">
+                <img src="{% static 'bonus/img/turkey_holiday__step05.jpg' %}">
+                <img src="{% static 'bonus/img/turkey_holiday__step06.jpg' %}">
+                <img src="{% static 'bonus/img/turkey_holiday__step07.jpg' %}">
+                <img src="{% static 'bonus/img/turkey_holiday__step08.jpg' %}">
+                <img src="{% static 'bonus/img/turkey_holiday__step09.jpg' %}">
+                <img src="{% static 'bonus/img/turkey_holiday__step10.jpg' %}">
+                <img src="{% static 'bonus/img/turkey_holiday__step11.jpg' %}">
+                <img src="{% static 'bonus/img/turkey_holiday__step12.jpg' %}">
+                <img src="{% static 'bonus/img/turkey_holiday__step13.jpg' %}">
+                <!--Repeat last image 3 times -->
+                <img src="{% static 'bonus/img/turkey_holiday__step14.jpg' %}">
+                <img src="{% static 'bonus/img/turkey_holiday__step14.jpg' %}">
+                <img src="{% static 'bonus/img/turkey_holiday__step14.jpg' %}">
+            </div>
+            </a>
+        </div>
+	</section>
+    
+    <script>
+        var indexValue = 0;
+        function slideShow(){
+            setTimeout(slideShow, 5000);
+            var x;
+            const img = document.querySelectorAll("img");
+            for(x = 0; x < img.length; x++){
+                img[x].style.display = "none";
+            }
+            indexValue++;
+            if(indexValue > img.length){indexValue = 1}
+            img[indexValue -1].style.display = "block";
+       }
+        slideShow();
+    </script>
+
+</body>
+</html>

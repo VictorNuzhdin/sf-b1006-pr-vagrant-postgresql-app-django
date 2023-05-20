@@ -1,0 +1,17 @@
+{% include "index_t1_header.html" %}
+
+<section>
+{% if hello_word %}
+    <div id="fader">
+      <h1><a href="/">{{ hello_word }}</a></h1>
+    </div>
+{% else %}
+    <div id="error">
+        <span class="error_title"><a href="/" style="color: red; text-decoration: none;">LANGUAGE_IS_NOT_SET</a></span>
+        <span class="error_text">example:<br>http://192.168.0.71:5000/hello/FRA</span>
+    </div>
+
+</section>
+{% endif %}
+
+{% include "index_t5_footer.html" %}

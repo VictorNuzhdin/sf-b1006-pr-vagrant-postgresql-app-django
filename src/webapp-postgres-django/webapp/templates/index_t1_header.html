@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hello from Django | Hello Words App</title>
+        <style>
+
+            /*--CSS RESET*/
+            /*
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            */
+
+            /*--USED_IN: home/home.html */
+            .title {
+                /*border: 1px solid red;*/
+                padding: 0;
+                /*padding-right: 10px;*/
+                /*padding-bottom: 10px;*/
+                display: block;
+                color: blue;
+                /*font-size: 3vh;*/
+                /*width: fit-content;*/
+            }
+            .items {
+                /*border: 1px solid red;*/
+                /*width: fit-content;*/
+                margin-bottom: 20px;
+            }
+            span.item {
+                /*border: 1px solid red;*/
+                padding: 0 5px 0 5px;
+            }
+            a:link {
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+                color: red;
+            }
+            a:visited {
+                color: blue;
+                text-decoration: none;
+            }
+
+            .a_title {
+                color: red;
+            }
+
+            /*--USED_IN: greetings/resultMultyRecords.html */
+            table, td, th {
+                border: 1px solid RGB(160,160,160);
+                color: RGB(48,48,48);
+                text-align: left;
+            }
+
+            table {
+                width: 25%;
+                border-collapse: collapse;
+            }
+
+            /*--USED_IN: greetings/resultSingleRecord.html */
+            section {
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 100%;
+                /*border: 1px solid red;*/
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            /* нахрена это было - ХЗ
+            div {
+                padding: 12px;
+                display: inline-block;
+            }
+            */
+            a:link {
+                color: blue;
+                text-decoration: none;
+            }
+            a:hover {
+                /*color: blue;*/
+                color: red;
+                text-decoration: none;
+                opacity: 70%;
+            }
+            a:visited {
+                color: blue;
+                text-decoration: none;
+            }
+
+            #fader h1 {
+                color: blue;
+                font-size: 15vh;
+                text-align: center;
+
+                -webkit-animation: fadein 3s;   /* Safari, Chrome and Opera > 12.1 */
+                -moz-animation: fadein 3s;   /* Firefox < 16 */
+                        animation: fadein 3s;   /* Default */
+            }
+            /* Default */
+            @keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+            /* Safari, Chrome and Opera > 12.1 */
+            @-webkit-keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+
+            /*--USED_IN: greetings/resultSingleRecord.html */
+            #error {
+                /*border: 1px solid red;*/
+                display: block;             /* block | none */
+            }
+            .error_title {
+                display: block;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 30px;
+                font-weight: bold;
+                color: red;
+            }
+            .error_text {
+                display: block;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 30px;
+                font-weight: bold;
+                color: RGB(160,160,160);
+            }
+
+        </style>
+      </head>
+<body>

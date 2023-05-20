@@ -1,0 +1,11 @@
+{% include "index_t1_header.html" %}
+{% include "index_t2_header_title.html" %}
+<div class="items">
+    {% for lang in page_data.languages %}
+    <span class="item"><a href="hello/{{ lang }}">{{ lang }}</a></span> |
+    {% endfor %}
+    <span class="item"><a href="hello">ALL</a></span> |
+    <span class="item"><a href="bonus">BONUS</a></span>
+</div>
+{% include "index_t4_footer_clock.html" %}
+{% include "index_t5_footer.html" %}
